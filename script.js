@@ -25,3 +25,4 @@ let test = 10;
 let passwordToNumber = Number(password);
 console.log(typeof passwordToNumber);
 document.getElementById("answer").innerHTML = txt;
+console.log()
