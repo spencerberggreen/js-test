@@ -50,4 +50,41 @@ console.log (
   0 == false,
   0 === false,
   0 !== false, 
-);
+)
+
+let hours = 25;
+
+if (hours < 12) {
+  console.log('good morning')
+} else if (hours <= 24) {
+  console.log('good afternoon')
+} else {
+  console.log('there are only 24 hours in a day')
+}
+
+// Logical operators
+// 
+// OR ||
+// returns true unless all operands are false
+console.log(false || true); // true
+
+let hour = 9;
+
+if (hour < 10 || hour > 18) {
+  console.log( 'The office is closed.' );
+}
+
+// AND &&
+//returns true only if all operands are true
+console.log( true && true );   // true
+console.log( false && true );  // false
+console.log( true && false );  // false
+console.log( false && false ); // false
+
+
+//NOT !
+//Converts the operand to boolean type: true/false.
+//Returns the inverse value.
+
+//a double NOT !! is sometimes used for converting a value to boolean type:
+
