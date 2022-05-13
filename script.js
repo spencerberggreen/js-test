@@ -6,17 +6,26 @@ select.addEventListener('change', setChord);
 function setChord() {
   const choice = select.value;
 
-  if (choice === 'Major triad') {
-    para.textContent = 'The Major triad sounds happy'
-  } else if (choice === 'minor triad') {
-    para.textContent = 'The minor triad sounds sad'
-  } else if (choice === 'diminished triad') {
-    para.textContent = 'The diminished triad sounds dissonant'
-  } else {
-    para.textContent = '';
+  switch (choice) {
+    case 'Major triad':
+      para.textContent = 'The Major triad sounds happy';
+      break;
+    case 'minor triad':
+      para.textContent = 'The minor triad sounds sad';
+      break;
+    case 'diminished triad':
+      para.textContent = 'The diminished triad sound dissonant';
+      break;
+    default:
+      para.textContent = '';
   }
 }
 
+let cheese = 'cheddar';
+
+if (cheese) { // because cheese is defined, it's boolean is true
+  console.log(!!cheese)
+}
 
 // let myNumber = 3;
 // let txt = "";
