@@ -1,4 +1,5 @@
-const select = document.querySelector('select');
+
+const select  = document.querySelector('select');
 const para = document.querySelector('p');
 
 select.addEventListener('change', setChord);
@@ -21,11 +22,33 @@ function setChord() {
   }
 }
 
-let cheese = 'cheddar';
+let myList = ['I', 'love', 'lists'];
+console.log(typeof myList);
+let makeAString = myList.join(' ');
+console.log(makeAString);
+console.log(typeof makeAString);
 
-if (cheese) { // because cheese is defined, it's boolean is true
-  console.log(!!cheese)
+let randomNumber = Math.random();
+console.log(randomNumber);
+
+function hello (name='stranger') {
+  console.log(`Hello, ${name}!`);
 }
+
+hello();
+hello('Spencer');
+
+let textBox = document.querySelector('#textBox');
+let output = document.querySelector('#output');
+
+textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
+
+
+// let cheese = 'cheddar';
+
+// if (cheese) { // because cheese is defined, it's boolean is true
+//   console.log(!!cheese)
+// }
 
 // let myNumber = 3;
 // let txt = "";
