@@ -22,6 +22,12 @@ function setChord() {
   }
 }
 
+function favoriteAnimal(animal = 'void') {
+  console.log('The ' + animal + ' is my favorite animal.')
+}
+
+favoriteAnimal('bird');
+
 let myList = ['I', 'love', 'lists'];
 console.log(typeof myList);
 let makeAString = myList.join(' ');
