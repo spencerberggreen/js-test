@@ -1,54 +1,77 @@
+const select = document.querySelector("select");
+const para = document.querySelector("p");
 
-const select  = document.querySelector('select');
-const para = document.querySelector('p');
-
-select.addEventListener('change', setChord);
+select.addEventListener("change", setChord);
 
 function setChord() {
   const choice = select.value;
 
   switch (choice) {
-    case 'Major triad':
-      para.textContent = 'The Major triad sounds happy';
+    case "Major triad":
+      para.textContent = "The Major triad sounds happy";
       break;
-    case 'minor triad':
-      para.textContent = 'The minor triad sounds sad';
+    case "minor triad":
+      para.textContent = "The minor triad sounds sad";
       break;
-    case 'diminished triad':
-      para.textContent = 'The diminished triad sound dissonant';
+    case "diminished triad":
+      para.textContent = "The diminished triad sound dissonant";
       break;
     default:
-      para.textContent = '';
+      para.textContent = "";
   }
 }
 
-function favoriteAnimal(animal = 'void') {
-  console.log('The ' + animal + ' is my favorite animal.')
+function favoriteAnimal(animal = "void") {
+  console.log("The " + animal + " is my favorite animal.");
 }
 
-favoriteAnimal('bird');
+favoriteAnimal("bird");
 
-let myList = ['I', 'love', 'lists'];
+let myList = ["I", "love", "lists"];
 console.log(typeof myList);
-let makeAString = myList.join(' ');
+let makeAString = myList.join(" ");
 console.log(makeAString);
 console.log(typeof makeAString);
 
 let randomNumber = Math.random();
 console.log(randomNumber);
 
-function hello (name='stranger') {
+function hello(name = "stranger") {
   console.log(`Hello, ${name}!`);
 }
 
 hello();
-hello('Spencer');
+hello("Spencer");
 
-let textBox = document.querySelector('#textBox');
-let output = document.querySelector('#output');
+let textBox = document.querySelector("#textBox");
+let output = document.querySelector("#output");
 
-textBox.addEventListener('keydown', event => output.textContent = `You pressed "${event.key}".`);
+textBox.addEventListener(
+  "keydown",
+  (event) => (output.textContent = `You pressed "${event.key}".`)
+);
 
+function sumNum(a, b) {
+  return console.log(a + b);
+}
+
+sumNum(1, 2);
+
+function checkAge(age) {
+  if (age >= 18) {
+    return console.log("access granted");
+  } else {
+    return console.log("access denied");
+  }
+}
+
+checkAge(26);
+
+let answer = parseInt(prompt("Please enter a number to count to:"));
+
+for (let i = 1; i <= answer; i++) {
+  console.log(i);
+}
 
 // let cheese = 'cheddar';
 
@@ -107,7 +130,7 @@ textBox.addEventListener('keydown', event => output.textContent = `You pressed "
 // console.log (
 //   0 == false,
 //   0 === false,
-//   0 !== false, 
+//   0 !== false,
 // )
 
 // let hours = 25;
@@ -121,7 +144,7 @@ textBox.addEventListener('keydown', event => output.textContent = `You pressed "
 // }
 
 // Logical operators
-// 
+//
 // OR ||
 // returns true unless all operands are false
 // console.log(false || false || true); // true
@@ -138,7 +161,6 @@ textBox.addEventListener('keydown', event => output.textContent = `You pressed "
 // console.log(true && true && false);  // false
 // console.log(true && true && true);   // true
 
-
 // NOT !
 // 1. Converts the operand to boolean type: true/false.
 // 2. Returns the inverse value.
@@ -146,6 +168,6 @@ textBox.addEventListener('keydown', event => output.textContent = `You pressed "
 // a double NOT !! is sometimes used for converting a value to a boolean
 
 // Precedence of && is higher than ||
-//  a && b  ||  c && d 
+//  a && b  ||  c && d
 // equates to
 // (a && b) || (c && d)
