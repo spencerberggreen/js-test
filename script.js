@@ -67,11 +67,19 @@ function checkAge(age) {
 
 checkAge(26);
 
-let answer = parseInt(prompt("Please enter a number to count to:"));
+// let answer = parseInt(prompt("Please enter a number to count to:"));
 
-for (let i = 1; i <= answer; i++) {
-  console.log(i);
-}
+// for (let i = 1; i <= answer; i++) {
+//   if (i % 3 === 0 && i % 5 === 0) {
+//     console.log("FizzBuzz");
+//   } else if (i % 3 === 0) {
+//     console.log("Fizz");
+//   } else if (i % 5 === 0) {
+//     console.log("Buzz");
+//   } else {
+//     console.log(i);
+//   }
+// }
 
 // let cheese = 'cheddar';
 
